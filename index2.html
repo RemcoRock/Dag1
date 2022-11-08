@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Tweede</h1>
+
+    <input type="text" id="input1">
+    <br/>
+    <input type="text" id="input2">
+    <br/>
+    <button type="button" onclick="optellen()">
+        Optellen
+    </button>
+    <br/>
+    <button type="button" onclick="aftrekken()">
+        Aftrekken
+    </button>
+    <br/>
+    <button type="button" onclick="vermenigvuldigen()">
+        Vermenigvuldigen
+    </button>
+    <br/>
+    <button type="button" onclick="delen()">
+        Delen
+    </button>
+
+
+    <script>
+        function optellen(){
+            let input1 = document.getElementById('input1').value;
+            let input2 = document.getElementById('input2').value;
+            let number1 = Number.parseInt(input1);
+            let number2 = Number.parseInt(input2);
+            alert(number1 + number2);
+        }
+        function aftrekken(){
+            let input1 = document.getElementById('input1').value;
+            let input2 = document.getElementById('input2').value;
+            let number1 = Number.parseInt(input1);
+            let number2 = Number.parseInt(input2);
+            alert(number1 - number2);
+        }
+        function vermenigvuldigen(){
+            let input1 = document.getElementById('input1').value;
+            let input2 = document.getElementById('input2').value;
+            let number1 = Number.parseInt(input1);
+            let number2 = Number.parseInt(input2);
+            alert(number1 * number2);
+        }
+        function delen(){
+            let input1 = document.getElementById('input1').value;
+            let input2 = document.getElementById('input2').value;
+            let number1 = Number.parseInt(input1);
+            let number2 = Number.parseInt(input2);
+            alert(number1 / number2);
+        }
+    </script>
+</body>
+</html>
